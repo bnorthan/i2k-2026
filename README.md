@@ -3,18 +3,19 @@
 **I2K 2026**
 
 A short course on GPU and deep learning segmentation and restoration in Jupyter
-and Napari, where each method runs in its own environment.
+and Napari, where complex and incompatible python dependencies are handled by
+running each method in its own environment.
 
 ## About
 
-Strategies for setting up Jupyter notebooks and napari plugins for deep
-learning restoration and segmentation. The goal is to compare different
-approaches — Cellpose, StarDist, classical image processing — in one workflow,
-whether that is a script, a notebook or a napari plugin. This is normally hard
-because the libraries need incompatible dependencies. We show how appose, pixi
-and cellcast address that, and work through three projects built on them.
+The goal of this workshop is to run and compare different approaches —
+Cellpose, StarDist, classical image processing, gpu deconvolution — in one
+workflow, whether that is a script, a notebook or a napari plugin. This is
+normally hard because the libraries need incompatible dependencies. We show
+how appose, pixi and scikit-ops address that, and work through use cases
+using both notebooks and napari plugins.
 
-## The three projects
+## Projects used in this workshop
 
 - **[scikit-ops](https://github.com/apposed/scikit-ops)** — the ops, plus the
   machinery that runs each one in its own environment. We work through
