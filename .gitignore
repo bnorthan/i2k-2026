@@ -1,0 +1,14 @@
+# Workshop data and trained models -- 1.1 GB, fetched or generated, never committed.
+notebooks/data/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Editors
+.vscode/
+.ipynb_checkpoints/
+
+# Scratch
+*_scratch*.ipynb
+* copy.ipynb
