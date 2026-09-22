@@ -12,3 +12,6 @@ __pycache__/
 # Scratch
 *_scratch*.ipynb
 * copy.ipynb
+
+# pixi environments
+.pixi/

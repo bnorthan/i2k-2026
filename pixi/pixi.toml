@@ -1,0 +1,54 @@
+[workspace]
+name = "i2k2026"
+description = "I2K 2026 course environment: napari-ai-lab, scikit-ops and skop-napari from released or public sources."
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64", "osx-arm64"]
+version = "0.1.0"
+
+# Nothing here reads a local checkout. napari-ai-lab and appose come from PyPI;
+# scikit-ops and skop-napari are not on PyPI yet, so they come from their
+# public git repos, pinned so the course does not move under people.
+#
+# Torch, micro_sam and cellpose are in the host because interactive SAM needs
+# the image embedding resident between clicks. Other stacks (StarDist, ...)
+# are built by scikit-ops in their own environments on first use.
+
+[system-requirements]
+cuda = "12.0"
+
+[dependencies]
+python = "3.12.*"
+# Brings napari, pyqt6 and segment-anything with it.
+micro_sam = ">=1.8"
+torchvision = "*"
+ipykernel = "<7"  # napari-console requires <7
+jupyterlab = "*"
+matplotlib = "*"
+tifffile = "*"
+
+[pypi-dependencies]
+napari-ai-lab = ">=0.1.0a2"
+tnia-python = "*"
+# From PyPI, not conda: conda's cellpose and albumentations pull a second cv2/Qt.
+cellpose = ">=4"
+albumentations = "*"
+appose = ">=0.12"
+scikit-ops = { git = "https://github.com/apposed/scikit-ops", rev = "9116fc8" }
+skop-napari = { git = "https://github.com/apposed/skop-napari", rev = "d6e3079" }
+
+[target.linux-64.dependencies]
+pytorch-gpu = "*"
+cudnn = "*"
+cuda-version = "12.2.*"
+
+[target.win-64.dependencies]
+pytorch-gpu = "*"
+cudnn = "*"
+
+[target.osx-arm64.dependencies]
+pytorch = "*"
+
+[tasks]
+lab = "jupyter lab"
+napari = "napari"
+register-kernel = "python -m ipykernel install --user --name=i2k2026 --display-name 'I2K 2026'"
