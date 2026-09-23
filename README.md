@@ -35,11 +35,7 @@ using both notebooks and napari plugins.
 Rough order: ops in notebooks, then the same ops as plugins, then the
 annotation and training workflow on top.
 
-## Contents
-
-TODO — notebooks, environments, schedule.
-
-## Early bird installation
+## Installation
 
 For anyone who wants to try things before the course. Expect this to change.
 scikit-ops and skop-napari are not on PyPI yet, so the lockfile pins them
@@ -127,3 +123,22 @@ An NVIDIA GPU is recommended. Things run on CPU, slowly.
 
 More detail, and the Windows kernel-crash fix, in
 [scikit-ops/notebooks/README.md](https://github.com/apposed/scikit-ops/blob/main/notebooks/README.md).
+
+## Contents
+
+Notebooks, in order:
+
+- `10_getting_started.ipynb` - check the install, run a toy op
+- `15_build_environments.ipynb` - build the op environments up front
+- `20_cellpose_builtins.ipynb` - Cellpose 3 and 4 built-in models on bees
+- `24_receptive_field_circles.ipynb` - StarDist receptive field on circles
+- `24b_receptive_field_circles_plain.ipynb` - the same, using the StarDist API directly
+- `27_cellpose_train_circles.ipynb` - train Cellpose on circles
+- `30_launch_ai_lab_pollen.ipynb` - launch ND AI Lab on the pollen project
+- `50_stardist_training_bees.ipynb` - train StarDist on bees
+- `52_cellpose_training_bees.ipynb` - train Cellpose on bees
+- `53_cellpose_predict_bees.ipynb` - predict bees with a trained Cellpose model
+
+Slides: [`docs/slides.pdf`](docs/slides.pdf)
+
+TODO: schedule
