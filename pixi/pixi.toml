@@ -9,9 +9,11 @@ version = "0.1.0"
 # scikit-ops and skop-napari are not on PyPI yet, so they come from their
 # public git repos, pinned so the course does not move under people.
 #
-# Torch, micro_sam and cellpose are in the host because interactive SAM needs
-# the image embedding resident between clicks. Other stacks (StarDist, ...)
-# are built by scikit-ops in their own environments on first use.
+# Torch and micro_sam are in the host because interactive SAM keeps the image
+# embedding resident between clicks, so it cannot run out of process. It is
+# the only model stack here for that reason. Every other one -- StarDist,
+# Cellpose 3, Cellpose 4 -- is built by scikit-ops in its own environment on
+# first use.
 
 [system-requirements]
 cuda = "12.0"
@@ -27,13 +29,16 @@ matplotlib = "*"
 tifffile = "*"
 
 [pypi-dependencies]
-napari-ai-lab = ">=0.1.0a2"
+# a3 is the first release with the scikit-ops segmenters registered by
+# default; a2 registers the in-host Cellpose and StarDist instead.
+napari-ai-lab = ">=0.1.0a3"
 tnia-python = "*"
-# From PyPI, not conda: conda's cellpose and albumentations pull a second cv2/Qt.
-cellpose = ">=4"
+# From PyPI, not conda: conda's albumentations pulls a second cv2/Qt.
+# No cellpose here on purpose -- every Cellpose segmenter and notebook goes
+# through scikit-ops, which runs it in its own environment.
 albumentations = "*"
 appose = ">=0.12"
-scikit-ops = { git = "https://github.com/apposed/scikit-ops", rev = "9116fc8" }
+scikit-ops = { git = "https://github.com/apposed/scikit-ops", rev = "d6e45f9" }
 skop-napari = { git = "https://github.com/apposed/skop-napari", rev = "d6e3079" }
 
 [target.linux-64.dependencies]
@@ -49,6 +54,10 @@ cudnn = "*"
 pytorch = "*"
 
 [tasks]
-lab = "jupyter lab"
+# cwd = ".." so the file browser opens at the repo root and shows notebooks/,
+# not this directory. Pixi otherwise runs tasks wherever you invoked them.
+jupyter = { cmd = "jupyter lab", cwd = ".." }
 napari = "napari"
-register-kernel = "python -m ipykernel install --user --name=i2k2026 --display-name 'I2K 2026'"
+# Not `ipykernel install`: that writes a bare-interpreter argv, which dies on
+# import skimage when a client launches it without activation. See the script.
+register-kernel = { cmd = "python register_kernel.py", cwd = "." }

@@ -50,6 +50,10 @@ everyone gets the same versions on Windows, macOS and Linux.
 
 ### 1. Install pixi
 
+Windows installer
+
+Follow instructions [here](https://pixi.prefix.dev/latest/installation/#__tabbed_1_2)
+
 Windows, in PowerShell:
 
 ```powershell
@@ -81,12 +85,15 @@ room.
 ### 3. Check it works
 
 ```sh
-pixi run lab      # Jupyter
-pixi run napari   # napari; the plugins are under Plugins
+pixi run jupyter   # JupyterLab
+pixi run lab # should start napari with the ai-lab plugin and an imageset loaded
+pixi run napari    # napari; the plugins are under Plugins
 ```
 
-`pixi run register-kernel` adds the environment to Jupyter's kernel list, so
-notebooks outside this directory can use it.
+To run the notebooks in an editor:
+
+- [Using the pixi environment in a VS Code notebook](docs/pixi-in-vscode.md)
+- [Using the pixi environment in Jupyter](docs/pixi-in-jupyter.md)
 
 ### What is in the environment
 
@@ -97,6 +104,24 @@ so it cannot run out of process.
 Every other model stack is built by scikit-ops in its own environment on
 first use, under `~/.local/share/appose/`. That first call is slow -- several
 GB, then model weights. That is the point of the course.
+
+### Fallback: if pixi gives you trouble
+
+This path skips pixi. It runs the notebooks and the ops, but **not**
+interactive segmentation: it installs no micro_sam, so the interactive SAM
+parts of the course will not work. Use it to keep going, not as the
+course environment.
+
+Python 3.12 or newer (skop-napari needs it), in a venv or conda env:
+
+```sh
+pip install "scikit-ops @ git+https://github.com/apposed/scikit-ops.git"
+pip install "skop-napari @ git+https://github.com/apposed/skop-napari.git"
+pip install napari-ai-lab
+pip install "napari[all]" jupyterlab matplotlib scikit-image tifffile
+```
+
+Then `jupyter lab`, or select that interpreter in VS Code.
 
 An NVIDIA GPU is recommended. Things run on CPU, slowly.
 

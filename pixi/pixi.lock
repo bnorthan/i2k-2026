@@ -531,13 +531,8 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/0a/e2/91f145e1f32428e9e1f21f46a7022ffe63d11f549ee55c3b9265ff5207fc/albucore-0.0.24-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8e/64/013409c451a44b61310fb757af4527f3de57fc98a00f40448de28b864290/albumentations-2.0.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/12/969743e8b7150d13b654756f3bb927c4a916747e16742c0e202e9a5e6a66/appose-0.12.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/cc/20/d9d1fa1abffc8dab4381116ea0d91e8f8e4315acc038b76679608c097649/cellpose-4.2.1.1-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/33/e4/8c526e16c80c52fbd982e2a048bea10dcd256dc7422b29bb8d6cf76bf3b7/fastremap-1.20.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
-      - pypi: https://files.pythonhosted.org/packages/88/b7/600e84adc5f0e1a41005a36ec5df23a3c27b73284717c2bc85c1233fb33a/fill_voids-2.1.2-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
-      - pypi: https://files.pythonhosted.org/packages/f1/ff/0de919a2860de773b2c126b959fc63705ce1fe25a7b5227616a85a0949b0/napari_ai_lab-0.1.0a2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/e1/ec/0830d60c31a7b8e1c953568ff873bd9fbc7a751bb83a704cf25cba4a367a/roifile-2026.7.30-py3-none-any.whl
-      - pypi: git+https://github.com/apposed/scikit-ops?rev=9116fc8#9116fc84f50a377ac4476c2cefbc5fe8ddeff5e7
-      - pypi: https://files.pythonhosted.org/packages/75/77/8e0c16abf151a1dd076b562febc0da2ecf1132b0b41826087af96f101f42/segment_anything-1.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/66/6c/6e2cd684c4386a6006ae22b9d6c4eff250ff4f3c5d4678ed4948a251d5a1/napari_ai_lab-0.1.0a3-py3-none-any.whl
+      - pypi: git+https://github.com/apposed/scikit-ops?rev=d6e45f9#d6e45f96b7938f533d0ab85696c5b7f5b11d2b94
       - pypi: https://files.pythonhosted.org/packages/3c/28/7ae846998728326759eab771afd83ad721b6c10e9cef7da2b5ca9bdd4a7b/simsimd-6.5.16-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: git+https://github.com/apposed/skop-napari?rev=d6e3079#d6e30792e4f8a6436d9fc572530b417603e94682
       - pypi: https://files.pythonhosted.org/packages/03/e8/5c880ffd8d4bb9df4cdf75ab8b44fc8f7011b6cb629b3e6242f3d5944b4f/stringzilla-5.1.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
@@ -1039,13 +1034,8 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/0a/e2/91f145e1f32428e9e1f21f46a7022ffe63d11f549ee55c3b9265ff5207fc/albucore-0.0.24-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8e/64/013409c451a44b61310fb757af4527f3de57fc98a00f40448de28b864290/albumentations-2.0.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/12/969743e8b7150d13b654756f3bb927c4a916747e16742c0e202e9a5e6a66/appose-0.12.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/cc/20/d9d1fa1abffc8dab4381116ea0d91e8f8e4315acc038b76679608c097649/cellpose-4.2.1.1-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/ec/2a/34ad4f73183defb188accb1947e4bee06b8b86f5644419e31faf5fa98c9c/fastremap-1.20.0-cp312-cp312-macosx_11_0_arm64.whl
-      - pypi: https://files.pythonhosted.org/packages/eb/eb/eaa16793f50b0b5a888229039a6d5bd40c0b532f5a05fa778e77d7eac137/fill_voids-2.1.2-cp312-cp312-macosx_11_0_arm64.whl
-      - pypi: https://files.pythonhosted.org/packages/f1/ff/0de919a2860de773b2c126b959fc63705ce1fe25a7b5227616a85a0949b0/napari_ai_lab-0.1.0a2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/34/78/3cc84d58e13234861adf91d2897254cd84d3d4a90534d91c960b672e67d1/roifile-2026.2.10-py3-none-any.whl
-      - pypi: git+https://github.com/apposed/scikit-ops?rev=9116fc8#9116fc84f50a377ac4476c2cefbc5fe8ddeff5e7
-      - pypi: https://files.pythonhosted.org/packages/75/77/8e0c16abf151a1dd076b562febc0da2ecf1132b0b41826087af96f101f42/segment_anything-1.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/66/6c/6e2cd684c4386a6006ae22b9d6c4eff250ff4f3c5d4678ed4948a251d5a1/napari_ai_lab-0.1.0a3-py3-none-any.whl
+      - pypi: git+https://github.com/apposed/scikit-ops?rev=d6e45f9#d6e45f96b7938f533d0ab85696c5b7f5b11d2b94
       - pypi: https://files.pythonhosted.org/packages/56/4f/0fa014163c6b846182f6355ebfc24f79e86ced7a2cce0ca95ba711f19e04/simsimd-6.5.16-cp312-cp312-macosx_11_0_arm64.whl
       - pypi: git+https://github.com/apposed/skop-napari?rev=d6e3079#d6e30792e4f8a6436d9fc572530b417603e94682
       - pypi: https://files.pythonhosted.org/packages/bb/2c/9ede1448dbcf880ac11c3673178133e3277e0150b376a978443225d9e1c0/stringzilla-5.1.2-cp312-cp312-macosx_11_0_arm64.whl
@@ -1562,13 +1552,8 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/0a/e2/91f145e1f32428e9e1f21f46a7022ffe63d11f549ee55c3b9265ff5207fc/albucore-0.0.24-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8e/64/013409c451a44b61310fb757af4527f3de57fc98a00f40448de28b864290/albumentations-2.0.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/12/969743e8b7150d13b654756f3bb927c4a916747e16742c0e202e9a5e6a66/appose-0.12.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/cc/20/d9d1fa1abffc8dab4381116ea0d91e8f8e4315acc038b76679608c097649/cellpose-4.2.1.1-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/27/47/b5a91118129433c19e6f686e8a6934cb1758b75554537161cd2efd697ed1/fastremap-1.20.0-cp312-cp312-win_amd64.whl
-      - pypi: https://files.pythonhosted.org/packages/7d/48/27af1b78cde8f0e4f20083c01565a4bcc57be62d8b19bbb7ee78c202b5a3/fill_voids-2.1.2-cp312-cp312-win_amd64.whl
-      - pypi: https://files.pythonhosted.org/packages/f1/ff/0de919a2860de773b2c126b959fc63705ce1fe25a7b5227616a85a0949b0/napari_ai_lab-0.1.0a2-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/e1/ec/0830d60c31a7b8e1c953568ff873bd9fbc7a751bb83a704cf25cba4a367a/roifile-2026.7.30-py3-none-any.whl
-      - pypi: git+https://github.com/apposed/scikit-ops?rev=9116fc8#9116fc84f50a377ac4476c2cefbc5fe8ddeff5e7
-      - pypi: https://files.pythonhosted.org/packages/75/77/8e0c16abf151a1dd076b562febc0da2ecf1132b0b41826087af96f101f42/segment_anything-1.0-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/66/6c/6e2cd684c4386a6006ae22b9d6c4eff250ff4f3c5d4678ed4948a251d5a1/napari_ai_lab-0.1.0a3-py3-none-any.whl
+      - pypi: git+https://github.com/apposed/scikit-ops?rev=d6e45f9#d6e45f96b7938f533d0ab85696c5b7f5b11d2b94
       - pypi: https://files.pythonhosted.org/packages/45/89/a45ef421b70d557eac7d196b03e45ff9ff8c7c786b4e54dfb505c1efc0f1/simsimd-6.5.16-cp312-cp312-win_amd64.whl
       - pypi: git+https://github.com/apposed/skop-napari?rev=d6e3079#d6e30792e4f8a6436d9fc572530b417603e94682
       - pypi: https://files.pythonhosted.org/packages/2e/a5/0d87bb0d286123c63be69de9226cd0c8f7b990f396d3a5d08aab0ac3d040/stringzilla-5.1.2-cp312-cp312-win_amd64.whl
@@ -3112,58 +3097,6 @@ packages:
   purls: []
   size: 1535591
   timestamp: 1788221425576
-- pypi: https://files.pythonhosted.org/packages/cc/20/d9d1fa1abffc8dab4381116ea0d91e8f8e4315acc038b76679608c097649/cellpose-4.2.1.1-py3-none-any.whl
-  name: cellpose
-  version: 4.2.1.1
-  sha256: 6c5c5159fd459115bee390ffb01d94d5e1006b97c211bf3c1a7b37d5395a1a13
-  requires_dist:
-  - numpy>=1.20.0
-  - scipy
-  - natsort
-  - tifffile
-  - tqdm
-  - torch>=1.6
-  - torchvision
-  - opencv-python-headless
-  - fastremap
-  - imagecodecs
-  - roifile
-  - fill-voids
-  - segment-anything
-  - sphinx>=3.0 ; extra == 'docs'
-  - sphinxcontrib-apidoc ; extra == 'docs'
-  - sphinx-rtd-theme ; extra == 'docs'
-  - sphinx-argparse ; extra == 'docs'
-  - pyqtgraph>=0.12.4 ; extra == 'gui'
-  - pyqt6 ; extra == 'gui'
-  - pyqt6-sip ; extra == 'gui'
-  - qtpy ; extra == 'gui'
-  - superqt ; extra == 'gui'
-  - dask ; extra == 'distributed'
-  - distributed ; extra == 'distributed'
-  - dask-image ; extra == 'distributed'
-  - pyyaml ; extra == 'distributed'
-  - zarr ; extra == 'distributed'
-  - dask-jobqueue ; extra == 'distributed'
-  - bokeh ; extra == 'distributed'
-  - pyarrow ; extra == 'distributed'
-  - bioimageio-core ; extra == 'bioimageio'
-  - pyqtgraph>=0.12.4 ; extra == 'all'
-  - pyqt6 ; extra == 'all'
-  - pyqt6-sip ; extra == 'all'
-  - qtpy ; extra == 'all'
-  - superqt ; extra == 'all'
-  - dask ; extra == 'all'
-  - distributed ; extra == 'all'
-  - dask-image ; extra == 'all'
-  - pyyaml ; extra == 'all'
-  - zarr ; extra == 'all'
-  - dask-jobqueue ; extra == 'all'
-  - bokeh ; extra == 'all'
-  - pyarrow ; extra == 'all'
-  - nd2 ; extra == 'all'
-  - pynrrd ; extra == 'all'
-  - bioimageio-core ; extra == 'all'
 - conda: https://conda.anaconda.org/conda-forge/noarch/certifi-2026.7.22-pyhd8ed1ab_0.conda
   sha256: fb167de4388e64e52aa3907ed099afab944c1fa6e5f74b281a312dae1bcf7f3b
   md5: 37e13edbe3b48f1095a9d085ef9cd83b
@@ -4146,27 +4079,6 @@ packages:
   purls: []
   size: 147797
   timestamp: 1781203608158
-- pypi: https://files.pythonhosted.org/packages/27/47/b5a91118129433c19e6f686e8a6934cb1758b75554537161cd2efd697ed1/fastremap-1.20.0-cp312-cp312-win_amd64.whl
-  name: fastremap
-  version: 1.20.0
-  sha256: 823f51f444c54c6e32fd0e61b0b9bc620e39de97cc16db0e513e15ebe902311a
-  requires_dist:
-  - numpy
-  requires_python: '>=3.9,<4.0'
-- pypi: https://files.pythonhosted.org/packages/33/e4/8c526e16c80c52fbd982e2a048bea10dcd256dc7422b29bb8d6cf76bf3b7/fastremap-1.20.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
-  name: fastremap
-  version: 1.20.0
-  sha256: 2daa147a1c02a74a4e2344a5631482e51e194bcf3bcc50410639511eed260f74
-  requires_dist:
-  - numpy
-  requires_python: '>=3.9,<4.0'
-- pypi: https://files.pythonhosted.org/packages/ec/2a/34ad4f73183defb188accb1947e4bee06b8b86f5644419e31faf5fa98c9c/fastremap-1.20.0-cp312-cp312-macosx_11_0_arm64.whl
-  name: fastremap
-  version: 1.20.0
-  sha256: ec8707820d06f3fd524c4a05b51174eaf9650827172cdf77efa1ed18293412e4
-  requires_dist:
-  - numpy
-  requires_python: '>=3.9,<4.0'
 - conda: https://conda.anaconda.org/conda-forge/linux-64/ffmpeg-7.1.1-gpl_he6f9043_104.conda
   sha256: 845c8b24e396c68b8e0c074b16495b9d294fc507d288305b31bb05852526b4f3
   md5: 3b009873fa3c9c737e0dab4ce048b03a
@@ -4322,27 +4234,6 @@ packages:
   - pkg:pypi/filelock?source=compressed-mapping
   size: 78889
   timestamp: 1788940924870
-- pypi: https://files.pythonhosted.org/packages/7d/48/27af1b78cde8f0e4f20083c01565a4bcc57be62d8b19bbb7ee78c202b5a3/fill_voids-2.1.2-cp312-cp312-win_amd64.whl
-  name: fill-voids
-  version: 2.1.2
-  sha256: ede3fc63a3c89058cc24b6abfb54beeef4a22d26511e08e0e4d89e779c038df0
-  requires_dist:
-  - numpy
-  - fastremap
-- pypi: https://files.pythonhosted.org/packages/88/b7/600e84adc5f0e1a41005a36ec5df23a3c27b73284717c2bc85c1233fb33a/fill_voids-2.1.2-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
-  name: fill-voids
-  version: 2.1.2
-  sha256: 2261bb1c6d0bb34fe4078af215e92630bfeec4028558b5295308b61b54d4a720
-  requires_dist:
-  - numpy
-  - fastremap
-- pypi: https://files.pythonhosted.org/packages/eb/eb/eaa16793f50b0b5a888229039a6d5bd40c0b532f5a05fa778e77d7eac137/fill_voids-2.1.2-cp312-cp312-macosx_11_0_arm64.whl
-  name: fill-voids
-  version: 2.1.2
-  sha256: 989d5da074b270937280cdfafaf1d943996b27fa1d8496d229114ffdfc24a4f1
-  requires_dist:
-  - numpy
-  - fastremap
 - conda: https://conda.anaconda.org/conda-forge/noarch/flexcache-0.3-pyh5ded981_2.conda
   sha256: fc30fd32ab60300e5ea6c15e3a39b3f3124a9236211fbb8bdb99708d3fbfed33
   md5: 9ed9902b7f19311ba0836f9dd0b4d7e0
@@ -12025,10 +11916,10 @@ packages:
   purls: []
   size: 9148
   timestamp: 1788640834172
-- pypi: https://files.pythonhosted.org/packages/f1/ff/0de919a2860de773b2c126b959fc63705ce1fe25a7b5227616a85a0949b0/napari_ai_lab-0.1.0a2-py3-none-any.whl
+- pypi: https://files.pythonhosted.org/packages/66/6c/6e2cd684c4386a6006ae22b9d6c4eff250ff4f3c5d4678ed4948a251d5a1/napari_ai_lab-0.1.0a3-py3-none-any.whl
   name: napari-ai-lab
-  version: 0.1.0a2
-  sha256: 28aee00ac8563d3f947b1698d79eb6b358207398ff58c0ce44bf469519d6998c
+  version: 0.1.0a3
+  sha256: f34dad0d12c0c12454da8b8327afb8ba959a61d6f46817d654304348a0936d4a
   requires_dist:
   - numpy
   - magicgui
@@ -15640,26 +15531,6 @@ packages:
   - pkg:pypi/rich?source=hash-mapping
   size: 208577
   timestamp: 1775991661559
-- pypi: https://files.pythonhosted.org/packages/34/78/3cc84d58e13234861adf91d2897254cd84d3d4a90534d91c960b672e67d1/roifile-2026.2.10-py3-none-any.whl
-  name: roifile
-  version: 2026.2.10
-  sha256: 5928a616b58a8ff1c9f89a0590db3616ccbf069c6692f8ecec2a7349f8bbb6ec
-  requires_dist:
-  - numpy
-  - matplotlib ; extra == 'all'
-  - tifffile ; extra == 'all'
-  - imagecodecs>=2026.1.14 ; extra == 'all'
-  requires_python: '>=3.11'
-- pypi: https://files.pythonhosted.org/packages/e1/ec/0830d60c31a7b8e1c953568ff873bd9fbc7a751bb83a704cf25cba4a367a/roifile-2026.7.30-py3-none-any.whl
-  name: roifile
-  version: 2026.7.30
-  sha256: 109e86078ba056b35fc2b6d2dcfac8942408202223b0ef5c4aa6f8047a94d68b
-  requires_dist:
-  - numpy>=2.1
-  - matplotlib ; extra == 'all'
-  - tifffile ; extra == 'all'
-  - imagecodecs>=2026.3.6 ; extra == 'all'
-  requires_python: '>=3.12'
 - conda: https://conda.anaconda.org/conda-forge/linux-64/rpds-py-2026.6.3-py312hc767a74_2.conda
   sha256: de56267c9c6e31e02eddd3239cce36154d500b325a6cbd83d57fb32bcc2ebe11
   md5: c5e7bd18dff14e8fdc74d6e623c5fe52
@@ -15926,7 +15797,7 @@ packages:
   - pkg:pypi/scikit-learn?source=compressed-mapping
   size: 9063867
   timestamp: 1789048425194
-- pypi: git+https://github.com/apposed/scikit-ops?rev=9116fc8#9116fc84f50a377ac4476c2cefbc5fe8ddeff5e7
+- pypi: git+https://github.com/apposed/scikit-ops?rev=d6e45f9#d6e45f96b7938f533d0ab85696c5b7f5b11d2b94
   name: scikit-ops
   version: 0.1.0.dev0
   requires_dist:
@@ -16132,20 +16003,6 @@ packages:
   purls: []
   size: 1680522
   timestamp: 1788378000061
-- pypi: https://files.pythonhosted.org/packages/75/77/8e0c16abf151a1dd076b562febc0da2ecf1132b0b41826087af96f101f42/segment_anything-1.0-py3-none-any.whl
-  name: segment-anything
-  version: '1.0'
-  sha256: 86f67d417a915823c3302098effe9008b688945772517310956bb49de0e7f02e
-  requires_dist:
-  - matplotlib ; extra == 'all'
-  - pycocotools ; extra == 'all'
-  - opencv-python ; extra == 'all'
-  - onnx ; extra == 'all'
-  - onnxruntime ; extra == 'all'
-  - flake8 ; extra == 'dev'
-  - isort ; extra == 'dev'
-  - black ; extra == 'dev'
-  - mypy ; extra == 'dev'
 - conda: https://conda.anaconda.org/conda-forge/noarch/segment-anything-1.0.1-pyhd8ed1ab_1.conda
   sha256: 2d98aed540f7e39bace32eb8e595a4156496922a4e2a37da3625c524e8295d69
   md5: b51829c7cddf29d10d9c82203c1d3a85
