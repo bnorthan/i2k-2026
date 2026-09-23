@@ -37,12 +37,7 @@ annotation and training workflow on top.
 
 ## Installation
 
-For anyone who wants to try things before the course. Expect this to change.
-scikit-ops and skop-napari are not on PyPI yet, so the lockfile pins them
-from git.
-
-The course environment is a pixi environment. Pixi reads a lockfile, so
-everyone gets the same versions on Windows, macOS and Linux.
+The course environment is a pixi environment the toml and lock file are in the course repo on github.  
 
 ### 1. Install pixi
 
