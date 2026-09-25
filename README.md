@@ -127,9 +127,8 @@ Notebooks, in order:
 - `15_build_environments.ipynb` - build the op environments up front
 - `20_cellpose_builtins.ipynb` - Cellpose 3 and 4 built-in models on bees
 - `24_receptive_field_circles.ipynb` - StarDist receptive field on circles
-- `24b_receptive_field_circles_plain.ipynb` - the same, using the StarDist API directly
 - `27_cellpose_train_circles.ipynb` - train Cellpose on circles
-- `30_launch_ai_lab_pollen.ipynb` - launch ND AI Lab on the pollen project
+- `30_launch_ai_lab.ipynb` - launch ND AI Lab on bees, ladybugs or pollen
 - `50_stardist_training_bees.ipynb` - train StarDist on bees
 - `52_cellpose_training_bees.ipynb` - train Cellpose on bees
 - `53_cellpose_predict_bees.ipynb` - predict bees with a trained Cellpose model
