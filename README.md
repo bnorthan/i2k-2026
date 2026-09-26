@@ -159,6 +159,7 @@ Notebooks, in order:
 - `27_cellpose_train_circles.ipynb` - train Cellpose on circles
 - `30_launch_ai_lab.ipynb` - launch ND AI Lab on bees, ladybugs or pollen
 - [`32_project_organization.md`](https://github.com/bnorthan/i2k-2026/blob/main/notebooks/32_project_organization.md) - the folders AI Lab keeps in a project
+- [`34_annotations.md`](https://github.com/bnorthan/i2k-2026/blob/main/notebooks/34_annotations.md) - from annotations to training patches
 - `50_stardist_training_bees.ipynb` - train StarDist on bees
 - `52_cellpose_training_bees.ipynb` - train Cellpose on bees
 - `53_cellpose_predict_bees.ipynb` - predict bees with a trained Cellpose model
