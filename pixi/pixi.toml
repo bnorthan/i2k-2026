@@ -29,9 +29,9 @@ matplotlib = "*"
 tifffile = "*"
 
 [pypi-dependencies]
-# a3 is the first release with the scikit-ops segmenters registered by
-# default; a2 registers the in-host Cellpose and StarDist instead.
-napari-ai-lab = ">=0.1.0a3"
+# a4 is the first release with profiles, which `pixi run bees` and
+# notebook 30 use. a3 was the first with the scikit-ops segmenters.
+napari-ai-lab = ">=0.1.0a4"
 tnia-python = "*"
 # From PyPI, not conda: conda's albumentations pulls a second cv2/Qt.
 # No cellpose here on purpose -- every Cellpose segmenter and notebook goes
@@ -61,3 +61,8 @@ napari = "napari"
 # Not `ipykernel install`: that writes a bare-interpreter argv, which dies on
 # import skimage when a client launches it without activation. See the script.
 register-kernel = { cmd = "python register_kernel.py", cwd = "." }
+# napari with ND AI Lab open on one dataset. Needs notebooks/12 run first for
+# the data. A profile can follow, e.g. `pixi run bees 2d-instance-skop`.
+bees = { cmd = "python launch_lab.py bees", cwd = "." }
+pollen = { cmd = "python launch_lab.py pollen", cwd = "." }
+ladybugs = { cmd = "python launch_lab.py ladybugs", cwd = "." }

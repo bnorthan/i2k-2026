@@ -531,7 +531,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/0a/e2/91f145e1f32428e9e1f21f46a7022ffe63d11f549ee55c3b9265ff5207fc/albucore-0.0.24-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8e/64/013409c451a44b61310fb757af4527f3de57fc98a00f40448de28b864290/albumentations-2.0.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/12/969743e8b7150d13b654756f3bb927c4a916747e16742c0e202e9a5e6a66/appose-0.12.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/66/6c/6e2cd684c4386a6006ae22b9d6c4eff250ff4f3c5d4678ed4948a251d5a1/napari_ai_lab-0.1.0a3-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/13/68/2425dcf45d37afeeb5c33b35525e78c73cbb59c04cd2c5adfed3bd49cc0b/napari_ai_lab-0.1.0a4-py3-none-any.whl
       - pypi: git+https://github.com/apposed/scikit-ops?rev=d6e45f9#d6e45f96b7938f533d0ab85696c5b7f5b11d2b94
       - pypi: https://files.pythonhosted.org/packages/3c/28/7ae846998728326759eab771afd83ad721b6c10e9cef7da2b5ca9bdd4a7b/simsimd-6.5.16-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: git+https://github.com/apposed/skop-napari?rev=d6e3079#d6e30792e4f8a6436d9fc572530b417603e94682
@@ -1034,7 +1034,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/0a/e2/91f145e1f32428e9e1f21f46a7022ffe63d11f549ee55c3b9265ff5207fc/albucore-0.0.24-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8e/64/013409c451a44b61310fb757af4527f3de57fc98a00f40448de28b864290/albumentations-2.0.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/12/969743e8b7150d13b654756f3bb927c4a916747e16742c0e202e9a5e6a66/appose-0.12.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/66/6c/6e2cd684c4386a6006ae22b9d6c4eff250ff4f3c5d4678ed4948a251d5a1/napari_ai_lab-0.1.0a3-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/13/68/2425dcf45d37afeeb5c33b35525e78c73cbb59c04cd2c5adfed3bd49cc0b/napari_ai_lab-0.1.0a4-py3-none-any.whl
       - pypi: git+https://github.com/apposed/scikit-ops?rev=d6e45f9#d6e45f96b7938f533d0ab85696c5b7f5b11d2b94
       - pypi: https://files.pythonhosted.org/packages/56/4f/0fa014163c6b846182f6355ebfc24f79e86ced7a2cce0ca95ba711f19e04/simsimd-6.5.16-cp312-cp312-macosx_11_0_arm64.whl
       - pypi: git+https://github.com/apposed/skop-napari?rev=d6e3079#d6e30792e4f8a6436d9fc572530b417603e94682
@@ -1552,7 +1552,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/0a/e2/91f145e1f32428e9e1f21f46a7022ffe63d11f549ee55c3b9265ff5207fc/albucore-0.0.24-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8e/64/013409c451a44b61310fb757af4527f3de57fc98a00f40448de28b864290/albumentations-2.0.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/12/969743e8b7150d13b654756f3bb927c4a916747e16742c0e202e9a5e6a66/appose-0.12.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/66/6c/6e2cd684c4386a6006ae22b9d6c4eff250ff4f3c5d4678ed4948a251d5a1/napari_ai_lab-0.1.0a3-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/13/68/2425dcf45d37afeeb5c33b35525e78c73cbb59c04cd2c5adfed3bd49cc0b/napari_ai_lab-0.1.0a4-py3-none-any.whl
       - pypi: git+https://github.com/apposed/scikit-ops?rev=d6e45f9#d6e45f96b7938f533d0ab85696c5b7f5b11d2b94
       - pypi: https://files.pythonhosted.org/packages/45/89/a45ef421b70d557eac7d196b03e45ff9ff8c7c786b4e54dfb505c1efc0f1/simsimd-6.5.16-cp312-cp312-win_amd64.whl
       - pypi: git+https://github.com/apposed/skop-napari?rev=d6e3079#d6e30792e4f8a6436d9fc572530b417603e94682
@@ -11916,10 +11916,10 @@ packages:
   purls: []
   size: 9148
   timestamp: 1788640834172
-- pypi: https://files.pythonhosted.org/packages/66/6c/6e2cd684c4386a6006ae22b9d6c4eff250ff4f3c5d4678ed4948a251d5a1/napari_ai_lab-0.1.0a3-py3-none-any.whl
+- pypi: https://files.pythonhosted.org/packages/13/68/2425dcf45d37afeeb5c33b35525e78c73cbb59c04cd2c5adfed3bd49cc0b/napari_ai_lab-0.1.0a4-py3-none-any.whl
   name: napari-ai-lab
-  version: 0.1.0a3
-  sha256: f34dad0d12c0c12454da8b8327afb8ba959a61d6f46817d654304348a0936d4a
+  version: 0.1.0a4
+  sha256: 41fc11e5fbbbd370943e54ccab3602273b7269228a061bba9b59baafcffa0c63
   requires_dist:
   - numpy
   - magicgui

@@ -37,13 +37,10 @@ annotation and training workflow on top.
 
 ## Installation
 
-The course environment is a pixi environment the toml and lock file are in the course repo on github.  
+The course environment is a pixi environment. Its `pixi.toml` and
+`pixi.lock` are in the `pixi` folder of this repo.
 
 ### 1. Install pixi
-
-Windows installer
-
-Follow instructions [here](https://pixi.prefix.dev/latest/installation/#__tabbed_1_2)
 
 Windows, in PowerShell:
 
@@ -70,16 +67,37 @@ cd i2k-2026/pixi
 pixi install
 ```
 
-Several GB, mostly torch and CUDA. Do this at home on good wifi, not in the
-room.
+Several GB, mostly torch and CUDA.
+
+If you get a chance do at home on good wifi (don't worry if you don't, we'll
+give some time to help everyone get setup during the tutorial)
 
 ### 3. Check it works
 
 ```sh
 pixi run jupyter   # JupyterLab
-pixi run lab # should start napari with the ai-lab plugin and an imageset loaded
 pixi run napari    # napari; the plugins are under Plugins
 ```
+
+After notebook 12 has downloaded the data, these open napari with AI Lab on
+one dataset:
+
+```sh
+pixi run bees
+pixi run pollen
+pixi run ladybugs
+```
+
+### Every time you start
+
+From the `pixi` folder of the repo -- it does not work from the repo root:
+
+```sh
+cd i2k-2026/pixi
+pixi run jupyter
+```
+
+Then open `notebooks/10_installation_check.ipynb`.
 
 To run the notebooks in an editor:
 
@@ -88,9 +106,9 @@ To run the notebooks in an editor:
 
 ### What is in the environment
 
-napari, the widgets, and the notebook kernel. Also torch, micro_sam and
-cellpose: interactive SAM keeps the image embedding resident between clicks,
-so it cannot run out of process.
+napari, the widgets, and the notebook kernel. Also torch and micro_sam:
+interactive SAM keeps the image embedding resident between clicks, so it
+cannot run out of process.
 
 Every other model stack is built by scikit-ops in its own environment on
 first use, under `~/.local/share/appose/`. That first call is slow -- several
@@ -113,7 +131,15 @@ pip install napari-ai-lab "tnia-python[plotting]" albumentations jupyterlab matp
 (used in notebook 52) but is not declared as one of its dependencies, so it
 has to be installed explicitly.
 
-Then `jupyter lab`, or select that interpreter in VS Code.
+Then, every time:
+
+```sh
+cd i2k-2026
+conda activate i2k2026
+jupyter lab
+```
+
+Or select that interpreter in VS Code.
 
 An NVIDIA GPU is recommended. Things run on CPU, slowly.
 
@@ -132,6 +158,7 @@ Notebooks, in order:
 - `24_receptive_field_circles.ipynb` - StarDist receptive field on circles
 - `27_cellpose_train_circles.ipynb` - train Cellpose on circles
 - `30_launch_ai_lab.ipynb` - launch ND AI Lab on bees, ladybugs or pollen
+- [`32_project_organization.md`](https://github.com/bnorthan/i2k-2026/blob/main/notebooks/32_project_organization.md) - the folders AI Lab keeps in a project
 - `50_stardist_training_bees.ipynb` - train StarDist on bees
 - `52_cellpose_training_bees.ipynb` - train Cellpose on bees
 - `53_cellpose_predict_bees.ipynb` - predict bees with a trained Cellpose model
