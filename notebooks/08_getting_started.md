@@ -1,9 +1,12 @@
 # 08 — Getting started
 
+**Under construction:** scikit-ops and napari-ai-lab are very new. Expect a
+few hiccups, and some changes ahead.
+
+<img src="../docs/images/under_construction.png" alt="Under construction" width="250">
+
 Ops and runners are new. The goal of this workshop is not to understand everything
-about them, those are for the future. Today we see why we need them and what
-they let us do: run deep learning workflows that would otherwise be hard to
-install and hard to combine.
+about them. The main goal of this workshop is learn from a practical perspective how scikit-ops can allow us to run deep learning workflows that are hard to install and combine. 
 
 The motivation behind scikit-ops is to allow very repeatable, very precise,
 isolated environments to hold dependencies that potentially conflict with the
@@ -12,7 +15,7 @@ the latest version of napari. The scikit-ops framework, via appose, takes care
 of the details of that installation. The host dependencies are simple and easy for
 the user to install.
 
-Here we install the host. Then notebook 10 checks it works.
+Here we install the host. Afterwards run notebook 10 to verify your installation.
 
 ## Install
 

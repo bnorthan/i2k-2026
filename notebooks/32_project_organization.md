@@ -15,9 +15,7 @@ training run.
 
 **annotations**
 
-- The labels you draw in AI Lab, one `.tif` per image.
-- They are in `annotations/Labels (Persistent)/`.
-- They can be partial. Annotate some objects now, more later.
+- annotations are the image masks saved same size as the images.  Not all annotations have to be used for training.  That is where labels come in. 
 
 **labels**
 
@@ -25,6 +23,7 @@ training run.
 - `input0/` holds the image crops, `truth0/` the matching label crops.
 - `boxes.csv` records where each box is.
 - Only these are used for training.
+- so labels are the parts of the annotations that will be used for training (after augmentation)
 
 **patches**
 
@@ -44,6 +43,6 @@ training run.
   click on that image is fast.
 - Safe to delete. They are made again when needed.
 
-## The order
+## The processes
 
-images → annotations → labels → patches → models
+We load images -> we use napari labeling tools or sam to create annotations -> we use bounding boxes to mark what part of annotations should be used for training -> we use augmentation to generate the actual patches used for training -> and after training we get models. 

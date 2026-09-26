@@ -18,6 +18,16 @@ Brian Northan, True North Intelligent Algorithms
 
 ---
 
+# Under construction
+
+scikit-ops and napari-ai-lab are very new.
+
+Expect a few hiccups, and some changes ahead.
+
+![bg right:30% fit](images/under_construction.png)
+
+---
+
 # The problem
 
 - Compare Cellpose, StarDist in the 
@@ -48,7 +58,7 @@ TODO: one line each
 - Multi-framework comparison
 - Compare on image sequences
 
-TODO: screenshot
+![bg right:60% fit](images/ai_lab.png)
 
 ---
 
