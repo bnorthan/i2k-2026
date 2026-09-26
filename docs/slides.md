@@ -57,5 +57,5 @@ TODO: screenshot
 ## github.com/bnorthan/i2k-2026
 
 - Install at home. Several GB.
-- Run `notebooks/10_getting_started.ipynb`
+- Read `notebooks/08_getting_started.md`, then run `notebooks/10_installation_check.ipynb`
 - Runs clean, you are ready

@@ -98,19 +98,20 @@ GB, then model weights. That is the point of the course.
 
 ### Fallback: if pixi gives you trouble
 
-This path skips pixi. It runs the notebooks and the ops, but **not**
-interactive segmentation: it installs no micro_sam, so the interactive SAM
-parts of the course will not work. Use it to keep going, not as the
-course environment.
-
-Python 3.12 or newer (skop-napari needs it), in a venv or conda env:
+Use this only if pixi gives you trouble. micro_sam is only on conda-forge, so
+it goes in with conda, and everything else with pip.
 
 ```sh
+conda create -n i2k2026 -c conda-forge python=3.12 micro_sam
+conda activate i2k2026
 pip install "scikit-ops @ git+https://github.com/apposed/scikit-ops.git"
 pip install "skop-napari @ git+https://github.com/apposed/skop-napari.git"
-pip install napari-ai-lab
-pip install "napari[all]" jupyterlab matplotlib scikit-image tifffile
+pip install napari-ai-lab "tnia-python[plotting]" albumentations jupyterlab matplotlib scikit-image tifffile
 ```
+
+`albumentations` is needed by `napari-ai-lab`'s `AlbumentationsAugmenter`
+(used in notebook 52) but is not declared as one of its dependencies, so it
+has to be installed explicitly.
 
 Then `jupyter lab`, or select that interpreter in VS Code.
 
@@ -123,8 +124,10 @@ More detail, and the Windows kernel-crash fix, in
 
 Notebooks, in order:
 
-- `10_getting_started.ipynb` - check the install, run a toy op
-- `15_build_environments.ipynb` - build the op environments up front
+- [`08_getting_started.md`](https://github.com/bnorthan/i2k-2026/blob/main/notebooks/08_getting_started.md) - what the workshop is about, and the install
+- `10_installation_check.ipynb` - check the install, run a toy op
+- `12_get_the_data.ipynb` - download the bees, ladybugs and pollen images
+- `15_build_environments.ipynb` - build the op environments up front, and check the GPU
 - `20_cellpose_builtins.ipynb` - Cellpose 3 and 4 built-in models on bees
 - `24_receptive_field_circles.ipynb` - StarDist receptive field on circles
 - `27_cellpose_train_circles.ipynb` - train Cellpose on circles
