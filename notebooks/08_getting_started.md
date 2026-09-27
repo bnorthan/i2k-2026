@@ -21,33 +21,28 @@ Here we install the host. Afterwards run notebook 10 to verify your installation
 
 ### Pixi (recommended)
 
-Install pixi. Windows, in PowerShell:
+Follow installation instructions for pixi that can be found here [pixi installation page](https://pixi.prefix.dev/latest/installation/).
 
-```powershell
-powershell -ExecutionPolicy Bypass -c "irm -useb https://pixi.sh/install.ps1 | iex"
-```
-
-macOS and Linux:
-
-```sh
-curl -fsSL https://pixi.sh/install.sh | sh
-```
-
-Other options are on the [pixi installation page](https://pixi.prefix.dev/latest/installation/).
 Reopen the terminal afterwards, so `pixi` is on the path.
 
-Then build the course environment and start JupyterLab:
+Then build the course environment and register its kernel:
 
 ```sh
 git clone https://github.com/bnorthan/i2k-2026.git
 cd i2k-2026/pixi
 pixi install
-pixi run jupyter
+pixi run register-kernel
 ```
-
 `pixi install` is several GB, mostly torch and CUDA.
 
-If you get a chance do at home on good wifi (don't worry if you don't, we'll give some time to help everyone get setup during the tutorial)
+If you get a chance, do at home on good wifi (don't worry if you don't, we'll give some time to help everyone get setup during the tutorial)
+
+Then :
+
+- **JupyterLab:** `pixi run jupyter`
+- **VS Code:** open the repo, open a notebook, **Select Kernel** →
+  **Jupyter Kernel...** → **I2K 2026**. Details:
+  [pixi in VS Code](../docs/pixi-in-vscode.md).
 
 ### pip and conda (fallback)
 
@@ -68,12 +63,10 @@ has to be installed explicitly.
 
 ## Every time you start
 
-**Pixi.** From the `pixi` folder of the repo -- it does not work from the repo root:
+**Pixi.**
 
-```sh
-cd i2k-2026/pixi
-pixi run jupyter
-```
+- **JupyterLab:** `cd i2k-2026/pixi`, then `pixi run jupyter` (not from the repo root)
+- **VS Code:** open the notebook, pick the **I2K 2026** kernel
 
 **Fallback.**
 
