@@ -533,7 +533,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/0a/e2/91f145e1f32428e9e1f21f46a7022ffe63d11f549ee55c3b9265ff5207fc/albucore-0.0.24-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8e/64/013409c451a44b61310fb757af4527f3de57fc98a00f40448de28b864290/albumentations-2.0.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/12/969743e8b7150d13b654756f3bb927c4a916747e16742c0e202e9a5e6a66/appose-0.12.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/24/15/f25945843600e3650e3a2c631939ba31cc863b7e164519f0e5128283d415/napari_ai_lab-0.1.0a5-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/3c/43/6f16224263ca717e281a0863962092db960dff7015dacc3cc4a8add565fa/napari_ai_lab-0.1.0a6-py3-none-any.whl
       - pypi: git+https://github.com/apposed/scikit-ops?rev=d6e45f9#d6e45f96b7938f533d0ab85696c5b7f5b11d2b94
       - pypi: https://files.pythonhosted.org/packages/3c/28/7ae846998728326759eab771afd83ad721b6c10e9cef7da2b5ca9bdd4a7b/simsimd-6.5.16-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/03/e8/5c880ffd8d4bb9df4cdf75ab8b44fc8f7011b6cb629b3e6242f3d5944b4f/stringzilla-5.1.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
@@ -1035,7 +1035,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/0a/e2/91f145e1f32428e9e1f21f46a7022ffe63d11f549ee55c3b9265ff5207fc/albucore-0.0.24-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8e/64/013409c451a44b61310fb757af4527f3de57fc98a00f40448de28b864290/albumentations-2.0.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/12/969743e8b7150d13b654756f3bb927c4a916747e16742c0e202e9a5e6a66/appose-0.12.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/24/15/f25945843600e3650e3a2c631939ba31cc863b7e164519f0e5128283d415/napari_ai_lab-0.1.0a5-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/3c/43/6f16224263ca717e281a0863962092db960dff7015dacc3cc4a8add565fa/napari_ai_lab-0.1.0a6-py3-none-any.whl
       - pypi: git+https://github.com/apposed/scikit-ops?rev=d6e45f9#d6e45f96b7938f533d0ab85696c5b7f5b11d2b94
       - pypi: https://files.pythonhosted.org/packages/56/4f/0fa014163c6b846182f6355ebfc24f79e86ced7a2cce0ca95ba711f19e04/simsimd-6.5.16-cp312-cp312-macosx_11_0_arm64.whl
       - pypi: https://files.pythonhosted.org/packages/bb/2c/9ede1448dbcf880ac11c3673178133e3277e0150b376a978443225d9e1c0/stringzilla-5.1.2-cp312-cp312-macosx_11_0_arm64.whl
@@ -1552,7 +1552,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/0a/e2/91f145e1f32428e9e1f21f46a7022ffe63d11f549ee55c3b9265ff5207fc/albucore-0.0.24-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8e/64/013409c451a44b61310fb757af4527f3de57fc98a00f40448de28b864290/albumentations-2.0.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/12/969743e8b7150d13b654756f3bb927c4a916747e16742c0e202e9a5e6a66/appose-0.12.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/24/15/f25945843600e3650e3a2c631939ba31cc863b7e164519f0e5128283d415/napari_ai_lab-0.1.0a5-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/3c/43/6f16224263ca717e281a0863962092db960dff7015dacc3cc4a8add565fa/napari_ai_lab-0.1.0a6-py3-none-any.whl
       - pypi: git+https://github.com/apposed/scikit-ops?rev=d6e45f9#d6e45f96b7938f533d0ab85696c5b7f5b11d2b94
       - pypi: https://files.pythonhosted.org/packages/45/89/a45ef421b70d557eac7d196b03e45ff9ff8c7c786b4e54dfb505c1efc0f1/simsimd-6.5.16-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/2e/a5/0d87bb0d286123c63be69de9226cd0c8f7b990f396d3a5d08aab0ac3d040/stringzilla-5.1.2-cp312-cp312-win_amd64.whl
@@ -1905,7 +1905,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/0a/e2/91f145e1f32428e9e1f21f46a7022ffe63d11f549ee55c3b9265ff5207fc/albucore-0.0.24-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8e/64/013409c451a44b61310fb757af4527f3de57fc98a00f40448de28b864290/albumentations-2.0.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/12/969743e8b7150d13b654756f3bb927c4a916747e16742c0e202e9a5e6a66/appose-0.12.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/24/15/f25945843600e3650e3a2c631939ba31cc863b7e164519f0e5128283d415/napari_ai_lab-0.1.0a5-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/3c/43/6f16224263ca717e281a0863962092db960dff7015dacc3cc4a8add565fa/napari_ai_lab-0.1.0a6-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/9b/21/f6ef335f6e65724aa78b8d792b48d40a48c381715f1e62f5a5049e09d07e/opencv_python_headless-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl
       - pypi: git+https://github.com/apposed/scikit-ops?rev=d6e45f9#d6e45f96b7938f533d0ab85696c5b7f5b11d2b94
       - pypi: https://files.pythonhosted.org/packages/3c/28/7ae846998728326759eab771afd83ad721b6c10e9cef7da2b5ca9bdd4a7b/simsimd-6.5.16-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
@@ -2216,7 +2216,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/0a/e2/91f145e1f32428e9e1f21f46a7022ffe63d11f549ee55c3b9265ff5207fc/albucore-0.0.24-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8e/64/013409c451a44b61310fb757af4527f3de57fc98a00f40448de28b864290/albumentations-2.0.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/12/969743e8b7150d13b654756f3bb927c4a916747e16742c0e202e9a5e6a66/appose-0.12.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/24/15/f25945843600e3650e3a2c631939ba31cc863b7e164519f0e5128283d415/napari_ai_lab-0.1.0a5-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/3c/43/6f16224263ca717e281a0863962092db960dff7015dacc3cc4a8add565fa/napari_ai_lab-0.1.0a6-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/53/7c/8c8097891c509d98cd128493835c95631c80be6a8f37ed9d25716c2e16f1/opencv_python_headless-5.0.0.93-cp37-abi3-macosx_13_0_arm64.whl
       - pypi: git+https://github.com/apposed/scikit-ops?rev=d6e45f9#d6e45f96b7938f533d0ab85696c5b7f5b11d2b94
       - pypi: https://files.pythonhosted.org/packages/56/4f/0fa014163c6b846182f6355ebfc24f79e86ced7a2cce0ca95ba711f19e04/simsimd-6.5.16-cp312-cp312-macosx_11_0_arm64.whl
@@ -2520,7 +2520,7 @@ environments:
       - pypi: https://files.pythonhosted.org/packages/0a/e2/91f145e1f32428e9e1f21f46a7022ffe63d11f549ee55c3b9265ff5207fc/albucore-0.0.24-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/8e/64/013409c451a44b61310fb757af4527f3de57fc98a00f40448de28b864290/albumentations-2.0.8-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/33/12/969743e8b7150d13b654756f3bb927c4a916747e16742c0e202e9a5e6a66/appose-0.12.0-py3-none-any.whl
-      - pypi: https://files.pythonhosted.org/packages/24/15/f25945843600e3650e3a2c631939ba31cc863b7e164519f0e5128283d415/napari_ai_lab-0.1.0a5-py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/3c/43/6f16224263ca717e281a0863962092db960dff7015dacc3cc4a8add565fa/napari_ai_lab-0.1.0a6-py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b8/88/763b967f7efd7226b82c9fae16d560cba049b1f0c036647e65c610fd636e/opencv_python_headless-5.0.0.93-cp37-abi3-win_amd64.whl
       - pypi: git+https://github.com/apposed/scikit-ops?rev=d6e45f9#d6e45f96b7938f533d0ab85696c5b7f5b11d2b94
       - pypi: https://files.pythonhosted.org/packages/45/89/a45ef421b70d557eac7d196b03e45ff9ff8c7c786b4e54dfb505c1efc0f1/simsimd-6.5.16-cp312-cp312-win_amd64.whl
@@ -13602,10 +13602,10 @@ packages:
   purls: []
   size: 9148
   timestamp: 1788640834172
-- pypi: https://files.pythonhosted.org/packages/24/15/f25945843600e3650e3a2c631939ba31cc863b7e164519f0e5128283d415/napari_ai_lab-0.1.0a5-py3-none-any.whl
+- pypi: https://files.pythonhosted.org/packages/3c/43/6f16224263ca717e281a0863962092db960dff7015dacc3cc4a8add565fa/napari_ai_lab-0.1.0a6-py3-none-any.whl
   name: napari-ai-lab
-  version: 0.1.0a5
-  sha256: 9064a3ea79ad1e69b8b6f5b8b45fd6349f2613d1f07d2bc30acf23e690757dee
+  version: 0.1.0a6
+  sha256: 0fc5c23b7e2de501c48194f687379ea781b0d9092551dcc90bca7077e63e8549
   requires_dist:
   - numpy
   - magicgui

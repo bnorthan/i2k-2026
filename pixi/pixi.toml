@@ -26,9 +26,9 @@ matplotlib = "*"
 tifffile = "*"
 
 [pypi-dependencies]
-# a5: launch_nd_ai_lab's profile replaces register_all. a4 added profiles,
+# a6: keeps every label crop on close. a5: profile replaces register_all. a4 added profiles,
 # a3 the scikit-ops segmenters.
-napari-ai-lab = ">=0.1.0a5"
+napari-ai-lab = ">=0.1.0a6"
 tnia-python = "*"
 # From PyPI, not conda: conda's albumentations pulls a second cv2/Qt.
 # No cellpose here on purpose -- every Cellpose segmenter and notebook goes
@@ -72,6 +72,8 @@ napari = "napari"
 # Not `ipykernel install`: that writes a bare-interpreter argv, which dies on
 # import skimage when a client launches it without activation. See the script.
 register-kernel = { cmd = "python register_kernel.py", cwd = "." }
+# Every notebook, 1 epoch, in a temp copy. See the script.
+test-notebooks = { cmd = "python test_notebooks.py", cwd = "." }
 # napari with ND AI Lab open on one dataset. Needs notebooks/12 run first for
 # the data. A profile can follow, e.g. `pixi run bees all`.
 bees = { cmd = "python launch_lab.py bees", cwd = "." }
