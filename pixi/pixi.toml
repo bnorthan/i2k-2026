@@ -1,13 +1,13 @@
 [workspace]
 name = "i2k2026"
-description = "I2K 2026 course environment: napari-ai-lab, scikit-ops and skop-napari from released or public sources."
+description = "I2K 2026 course environment: napari-ai-lab and scikit-ops from released or public sources."
 channels = ["conda-forge"]
 platforms = ["win-64", "linux-64", "osx-arm64"]
 version = "0.1.0"
 
 # Nothing here reads a local checkout. napari-ai-lab and appose come from PyPI;
-# scikit-ops and skop-napari are not on PyPI yet, so they come from their
-# public git repos, pinned so the course does not move under people.
+# scikit-ops is not on PyPI yet, so it comes from its public git repo,
+# pinned so the course does not move under people.
 #
 # Torch and micro_sam are in the host because interactive SAM keeps the image
 # embedding resident between clicks, so it cannot run out of process. It is
@@ -15,14 +15,11 @@ version = "0.1.0"
 # Cellpose 3, Cellpose 4 -- is built by scikit-ops in its own environment on
 # first use.
 
-[system-requirements]
-cuda = "12.0"
-
 [dependencies]
 python = "3.12.*"
-# Brings napari, pyqt6 and segment-anything with it.
-micro_sam = ">=1.8"
-torchvision = "*"
+# Listed here, not left to micro_sam, so the lite environment has them too.
+napari = ">=0.9.1"  # ai-lab's vendored bbox layer needs >=0.8
+pyqt6 = "*"
 ipykernel = "<7"  # napari-console requires <7
 jupyterlab = "*"
 matplotlib = "*"
@@ -39,19 +36,33 @@ tnia-python = "*"
 albumentations = "*"
 appose = ">=0.12"
 scikit-ops = { git = "https://github.com/apposed/scikit-ops", rev = "d6e45f9" }
-skop-napari = { git = "https://github.com/apposed/skop-napari", rev = "d6e3079" }
 
-[target.linux-64.dependencies]
+# Interactive SAM: micro_sam plus torch and CUDA in the host. This is most of
+# the download. Environment "lite" leaves it out, for people who fall behind;
+# ai-lab then shows SAM as not installed, and scikit-ops models still run.
+[feature.sam.system-requirements]
+cuda = "12.0"
+
+[feature.sam.dependencies]
+# Brings segment-anything with it.
+micro_sam = ">=1.8"
+torchvision = "*"
+
+[feature.sam.target.linux-64.dependencies]
 pytorch-gpu = "*"
 cudnn = "*"
 cuda-version = "12.2.*"
 
-[target.win-64.dependencies]
+[feature.sam.target.win-64.dependencies]
 pytorch-gpu = "*"
 cudnn = "*"
 
-[target.osx-arm64.dependencies]
+[feature.sam.target.osx-arm64.dependencies]
 pytorch = "*"
+
+[environments]
+default = ["sam"]
+lite = []
 
 [tasks]
 # cwd = ".." so the file browser opens at the repo root and shows notebooks/,

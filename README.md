@@ -123,7 +123,6 @@ it goes in with conda, and everything else with pip.
 conda create -n i2k2026 -c conda-forge python=3.12 micro_sam
 conda activate i2k2026
 pip install "scikit-ops @ git+https://github.com/apposed/scikit-ops.git"
-pip install "skop-napari @ git+https://github.com/apposed/skop-napari.git"
 pip install napari-ai-lab "tnia-python[plotting]" albumentations jupyterlab matplotlib scikit-image tifffile
 ```
 

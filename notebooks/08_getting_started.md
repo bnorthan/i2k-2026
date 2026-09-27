@@ -35,7 +35,17 @@ pixi run register-kernel
 ```
 `pixi install` is several GB, mostly torch and CUDA.
 
-If you get a chance, do at home on good wifi (don't worry if you don't, we'll give some time to help everyone get setup during the tutorial)
+If you get a chance, do it at home on good wifi (don't worry if you don't, we'll give some time to help everyone get setup during the tutorial)
+
+**Slow download, or no NVIDIA GPU (Linux/Windows)?** Use lite. It skips
+micro_sam, torch and CUDA; everything else works, only interactive SAM does not.
+
+```sh
+pixi install -e lite
+pixi run -e lite register-kernel
+```
+
+Then add `-e lite` to `pixi run` commands, and pick the **I2K 2026 (lite)** kernel.
 
 Then :
 
@@ -53,7 +63,6 @@ it goes in with conda, and everything else with pip.
 conda create -n i2k2026 -c conda-forge python=3.12 micro_sam
 conda activate i2k2026
 pip install "scikit-ops @ git+https://github.com/apposed/scikit-ops.git"
-pip install "skop-napari @ git+https://github.com/apposed/skop-napari.git"
 pip install napari-ai-lab "tnia-python[plotting]" albumentations jupyterlab matplotlib scikit-image tifffile
 ```
 

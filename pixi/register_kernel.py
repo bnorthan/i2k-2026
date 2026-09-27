@@ -9,17 +9,23 @@ delay-loaded BLAS, and the kernel dies importing skimage with 0xc06d007f.
 
 Routing argv through `pixi run` makes the kernel activate itself, whoever
 starts it.
+
+Each pixi environment gets its own kernel: `pixi run -e lite register-kernel`
+registers "I2K 2026 (lite)" beside the default "I2K 2026".
 """
 
 import json
+import os
 import sys
 import tempfile
 from pathlib import Path
 
 from jupyter_client.kernelspec import KernelSpecManager
 
-NAME = "i2k2026"
-DISPLAY = "I2K 2026"
+# Pixi sets this for tasks. Absent means run outside pixi: assume default.
+ENV = os.environ.get("PIXI_ENVIRONMENT_NAME", "default")
+NAME = "i2k2026" if ENV == "default" else f"i2k2026-{ENV}"
+DISPLAY = "I2K 2026" if ENV == "default" else f"I2K 2026 ({ENV})"
 
 manifest = Path(__file__).resolve().parent / "pixi.toml"
 if not manifest.exists():
@@ -31,6 +37,8 @@ spec = {
         "run",
         "--manifest-path",
         str(manifest),
+        "-e",
+        ENV,
         "python",
         "-Xfrozen_modules=off",
         "-m",
