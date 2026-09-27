@@ -47,8 +47,6 @@ Expect a few hiccups, and some changes ahead.
 
 Idea is one host application but each model run in its own environment.
 
-TODO: one line each
-
 ---
 
 # Napari-AI-Lab

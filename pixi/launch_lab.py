@@ -48,7 +48,6 @@ ai_lab, sequence_viewer, model = launch_nd_ai_lab(
     viewer_type="sequence",
     axes_to_collapse="C",
     axis_types="NYXC",
-    register_all=True,
     profile=profile,
 )
 

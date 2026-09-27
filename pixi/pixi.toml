@@ -26,9 +26,9 @@ matplotlib = "*"
 tifffile = "*"
 
 [pypi-dependencies]
-# a4 is the first release with profiles, which `pixi run bees` and
-# notebook 30 use. a3 was the first with the scikit-ops segmenters.
-napari-ai-lab = ">=0.1.0a4"
+# a5: launch_nd_ai_lab's profile replaces register_all. a4 added profiles,
+# a3 the scikit-ops segmenters.
+napari-ai-lab = ">=0.1.0a5"
 tnia-python = "*"
 # From PyPI, not conda: conda's albumentations pulls a second cv2/Qt.
 # No cellpose here on purpose -- every Cellpose segmenter and notebook goes
