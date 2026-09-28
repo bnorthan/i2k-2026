@@ -31,19 +31,7 @@ the lite option, VS Code, and a pip/conda fallback.
 
 In short:
 
-Install pixi. Windows, in PowerShell:
-
-```powershell
-powershell -ExecutionPolicy Bypass -c "irm -useb https://pixi.sh/install.ps1 | iex"
-```
-
-macOS and Linux:
-
-```sh
-curl -fsSL https://pixi.sh/install.sh | sh
-```
-
-Other options are on the
+Install pixi, following the
 [pixi installation page](https://pixi.prefix.dev/latest/installation/).
 Reopen the terminal afterwards, so `pixi` is on the path. Then:
 
