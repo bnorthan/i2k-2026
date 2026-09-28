@@ -1,5 +1,6 @@
 """Run every course notebook, fast, and report which fail.
 
+    # from pixi/i2k2026_lite or pixi/i2k2026_microsam
     pixi run test-notebooks            # all but 12
     pixi run test-notebooks 20 52      # just these
 

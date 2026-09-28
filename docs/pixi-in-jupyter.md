@@ -15,7 +15,7 @@ what the course uses.
 ## The short way
 
 ```sh
-cd pixi
+cd pixi/i2k2026_lite    # or i2k2026_microsam
 pixi install
 pixi run jupyter
 ```
@@ -37,11 +37,11 @@ notebook. You do not need it. Use the file browser.
 Use this if you have your own Jupyter and want to launch it yourself.
 
 ```sh
-cd pixi
+cd pixi/i2k2026_lite    # or i2k2026_microsam
 pixi run register-kernel
 ```
 
-That adds a kernel named **I2K 2026**. Then start your own Jupyter and pick
+That adds a kernel named after the folder. Then start your own Jupyter and pick
 it from the kernel list.
 
 The kernel is registered for your user, so it appears in every notebook on
@@ -56,13 +56,13 @@ import sys
 print(sys.executable)
 ```
 
-The path must be inside `pixi/.pixi/envs/default`. If it is not, you are on
+The path must be inside `pixi/i2k2026_lite/.pixi` or `pixi/i2k2026_microsam/.pixi`. If it is not, you are on
 a different interpreter and nothing in the course will import.
 
 ## Do not pip install into it
 
-The environment is defined by `pixi/pixi.toml` and rebuilt from
-`pixi/pixi.lock`. Packages added by hand are lost on the next `pixi install`,
+The environment is defined by the folder's `pixi.toml` and rebuilt from
+its `pixi.lock`. Packages added by hand are lost on the next `pixi install`,
 and they can break the lockfile's versions.
 
 To add a package, put it in `pixi.toml` and run `pixi install` again.
@@ -70,5 +70,5 @@ To add a package, put it in `pixi.toml` and run `pixi install` again.
 ## Removing the kernel
 
 ```sh
-jupyter kernelspec uninstall i2k2026
+jupyter kernelspec uninstall i2k2026_lite i2k2026_microsam
 ```

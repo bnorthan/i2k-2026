@@ -1,0 +1,51 @@
+[workspace]
+name = "i2k2026_lite"
+description = "I2K 2026 course environment, lite (no micro_sam): napari-ai-lab and scikit-ops from released or public sources."
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64", "osx-arm64"]
+version = "0.1.0"
+
+# Nothing here reads a local checkout. napari-ai-lab and appose come from PyPI;
+# scikit-ops is not on PyPI yet, so it comes from its public git repo,
+# pinned so the course does not move under people.
+#
+# Lite: no micro_sam, torch or CUDA.
+# Interactive SAM is off.
+# Models run through scikit-ops.
+
+[dependencies]
+python = "3.12.*"
+napari = ">=0.9.1"  # ai-lab's vendored bbox layer needs >=0.8
+pyqt6 = "*"
+ipykernel = "<7"  # napari-console requires <7
+jupyterlab = "*"
+matplotlib = "*"
+tifffile = "*"
+
+[pypi-dependencies]
+# a6: keeps every label crop on close. a5: profile replaces register_all. a4 added profiles,
+# a3 the scikit-ops segmenters.
+napari-ai-lab = ">=0.1.0a6"
+tnia-python = "*"
+# From PyPI, not conda: conda's albumentations pulls a second cv2/Qt.
+# No cellpose here on purpose -- every Cellpose segmenter and notebook goes
+# through scikit-ops, which runs it in its own environment.
+albumentations = "*"
+appose = ">=0.12"
+scikit-ops = { git = "https://github.com/apposed/scikit-ops", rev = "d6e45f9" }
+
+[tasks]
+# cwd = "../.." so the file browser opens at the repo root and shows notebooks/,
+# not this directory. Pixi otherwise runs tasks wherever you invoked them.
+jupyter = { cmd = "jupyter lab", cwd = "../.." }
+napari = "napari"
+# Not `ipykernel install`: that writes a bare-interpreter argv, which dies on
+# import skimage when a client launches it without activation. See the script.
+register-kernel = { cmd = "python ../register_kernel.py", cwd = "." }
+# Every notebook, 1 epoch, in a temp copy. See the script.
+test-notebooks = { cmd = "python ../test_notebooks.py", cwd = "." }
+# napari with ND AI Lab open on one dataset. Needs notebooks/12 run first for
+# the data. A profile can follow, e.g. `pixi run bees all`.
+bees = { cmd = "python ../launch_lab.py bees", cwd = "." }
+pollen = { cmd = "python ../launch_lab.py pollen", cwd = "." }
+ladybugs = { cmd = "python ../launch_lab.py ladybugs", cwd = "." }

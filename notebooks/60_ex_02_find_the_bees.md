@@ -5,7 +5,7 @@ Medium. Can you train a model that finds the bees?
 ## Start AI Lab on bees
 
 ```sh
-cd i2k-2026/pixi
+cd i2k-2026/pixi/i2k2026_lite    # or i2k2026_microsam
 pixi run bees
 ```
 

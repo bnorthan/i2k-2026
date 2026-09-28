@@ -6,10 +6,10 @@ Can a generalist Cellpose model find all the pollen, with no training?
 
 From notebook 30 switch DATASET to 'pollen_count'
 
-From the `pixi` folder of the repo:
+From a pixi project folder:
 
 ```sh
-cd i2k-2026/pixi
+cd i2k-2026/pixi/i2k2026_lite    # or i2k2026_microsam
 pixi run pollen
 ```
 

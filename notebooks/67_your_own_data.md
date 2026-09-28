@@ -10,7 +10,7 @@ Open AI Lab on your own images, with no script.
 
 Any of these, in the course environment:
 
-- From the `pixi` folder: `pixi run napari`
+- From `pixi/i2k2026_lite` or `pixi/i2k2026_microsam`: `pixi run napari`
 - From a notebook: `import napari; napari.Viewer()`
 
 ## Open AI Lab

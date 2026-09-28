@@ -1,6 +1,6 @@
 """Start napari with ND AI Lab open on one of the course datasets.
 
-Run through the pixi tasks, from this folder:
+Run through the pixi tasks, from pixi/i2k2026_lite or pixi/i2k2026_microsam:
 
     pixi run bees
     pixi run pollen

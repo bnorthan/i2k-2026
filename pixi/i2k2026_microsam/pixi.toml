@@ -1,5 +1,5 @@
 [workspace]
-name = "i2k2026"
+name = "i2k2026_microsam"
 description = "I2K 2026 course environment: napari-ai-lab and scikit-ops from released or public sources."
 channels = ["conda-forge"]
 platforms = ["win-64", "linux-64", "osx-arm64"]
@@ -17,13 +17,19 @@ version = "0.1.0"
 
 [dependencies]
 python = "3.12.*"
-# Listed here, not left to micro_sam, so the lite environment has them too.
 napari = ">=0.9.1"  # ai-lab's vendored bbox layer needs >=0.8
 pyqt6 = "*"
 ipykernel = "<7"  # napari-console requires <7
 jupyterlab = "*"
 matplotlib = "*"
 tifffile = "*"
+
+# Interactive SAM: micro_sam plus torch and CUDA in the host. This is most of
+# the download. The i2k2026_lite project leaves it out, for people who fall behind;
+# ai-lab then shows SAM as not installed, and scikit-ops models still run.
+# micro_sam brings segment-anything with it.
+micro_sam = ">=1.8"
+torchvision = "*"
 
 [pypi-dependencies]
 # a6: keeps every label crop on close. a5: profile replaces register_all. a4 added profiles,
@@ -37,45 +43,33 @@ albumentations = "*"
 appose = ">=0.12"
 scikit-ops = { git = "https://github.com/apposed/scikit-ops", rev = "d6e45f9" }
 
-# Interactive SAM: micro_sam plus torch and CUDA in the host. This is most of
-# the download. Environment "lite" leaves it out, for people who fall behind;
-# ai-lab then shows SAM as not installed, and scikit-ops models still run.
-[feature.sam.system-requirements]
+[system-requirements]
 cuda = "12.0"
 
-[feature.sam.dependencies]
-# Brings segment-anything with it.
-micro_sam = ">=1.8"
-torchvision = "*"
-
-[feature.sam.target.linux-64.dependencies]
+[target.linux-64.dependencies]
 pytorch-gpu = "*"
 cudnn = "*"
 cuda-version = "12.2.*"
 
-[feature.sam.target.win-64.dependencies]
+[target.win-64.dependencies]
 pytorch-gpu = "*"
 cudnn = "*"
 
-[feature.sam.target.osx-arm64.dependencies]
+[target.osx-arm64.dependencies]
 pytorch = "*"
 
-[environments]
-default = ["sam"]
-lite = []
-
 [tasks]
-# cwd = ".." so the file browser opens at the repo root and shows notebooks/,
+# cwd = "../.." so the file browser opens at the repo root and shows notebooks/,
 # not this directory. Pixi otherwise runs tasks wherever you invoked them.
-jupyter = { cmd = "jupyter lab", cwd = ".." }
+jupyter = { cmd = "jupyter lab", cwd = "../.." }
 napari = "napari"
 # Not `ipykernel install`: that writes a bare-interpreter argv, which dies on
 # import skimage when a client launches it without activation. See the script.
-register-kernel = { cmd = "python register_kernel.py", cwd = "." }
+register-kernel = { cmd = "python ../register_kernel.py", cwd = "." }
 # Every notebook, 1 epoch, in a temp copy. See the script.
-test-notebooks = { cmd = "python test_notebooks.py", cwd = "." }
+test-notebooks = { cmd = "python ../test_notebooks.py", cwd = "." }
 # napari with ND AI Lab open on one dataset. Needs notebooks/12 run first for
 # the data. A profile can follow, e.g. `pixi run bees all`.
-bees = { cmd = "python launch_lab.py bees", cwd = "." }
-pollen = { cmd = "python launch_lab.py pollen", cwd = "." }
-ladybugs = { cmd = "python launch_lab.py ladybugs", cwd = "." }
+bees = { cmd = "python ../launch_lab.py bees", cwd = "." }
+pollen = { cmd = "python ../launch_lab.py pollen", cwd = "." }
+ladybugs = { cmd = "python ../launch_lab.py ladybugs", cwd = "." }

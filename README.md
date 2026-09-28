@@ -27,7 +27,7 @@ using both notebooks and napari plugins.
 
 Everything is in
 [`notebooks/08_getting_started.md`](notebooks/08_getting_started.md): pixi,
-the lite option, VS Code, and a pip/conda fallback.
+lite or microsam, VS Code, and a pip/conda fallback.
 
 In short:
 
@@ -37,7 +37,7 @@ Reopen the terminal afterwards, so `pixi` is on the path. Then:
 
 ```sh
 git clone https://github.com/bnorthan/i2k-2026.git
-cd i2k-2026/pixi
+cd i2k-2026/pixi/i2k2026_lite    # or i2k2026_microsam
 pixi install
 pixi run register-kernel
 pixi run jupyter
