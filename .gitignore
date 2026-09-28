@@ -1,5 +1,6 @@
 # Workshop data and trained models -- 1.1 GB, fetched or generated, never committed.
 notebooks/data/
+notebooks/data_small/
 
 # Python
 __pycache__/
